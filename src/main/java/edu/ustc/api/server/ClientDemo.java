@@ -21,7 +21,7 @@ public class ClientDemo {
 
 	public static void main(String[] args) throws IOException {
 
-		String url = "http://localhost:8888/recognize";
+		String url = "http://hdp322:8080/recognize";
 		// 获取音频字节数组
 		byte[] data;
 		File waveFile = new File("data/test/female/1.wav");

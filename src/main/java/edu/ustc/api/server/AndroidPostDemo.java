@@ -16,11 +16,12 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import edu.ustc.api.core.PostData;
 import edu.ustc.utils.JsonUtils;
 
+@SuppressWarnings("deprecation")
 public class AndroidPostDemo {
 
 	public static void main(String[] args) throws Exception {
 
-		String url = "http://localhost:8888/recognize";
+		String url = "http://220.178.13.120:8081/recognize";
 		// 获取音频字节数组
 		byte[] data;
 		File waveFile = new File("data/test/female/1.wav");
@@ -35,6 +36,7 @@ public class AndroidPostDemo {
 
 	}
 
+	@SuppressWarnings({ "resource" })
 	public static String doPost(String url, String data) {
 		HttpClient httpClient = new DefaultHttpClient();
 		HttpPost httpPost = new HttpPost(url);

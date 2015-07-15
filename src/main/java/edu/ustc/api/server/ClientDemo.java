@@ -24,7 +24,7 @@ public class ClientDemo {
 		String url = "http://hdp322:8080/recognize";
 		// 获取音频字节数组
 		byte[] data;
-		File waveFile = new File("data/test/female/1.wav");
+		File waveFile = new File("data/test/male/5.wav");
 		try (FileInputStream fis = new FileInputStream(waveFile);) {
 			// 从文件中创建字节数组
 			data = new byte[(int) waveFile.length()];
